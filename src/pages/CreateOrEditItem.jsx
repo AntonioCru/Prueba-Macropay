@@ -112,7 +112,7 @@ export default function CreateOrEditItem({ location }) {
           onSubmit={handleSubmit(onSubmit)}
           className='absolute inset-0 flex flex-col justify-center pl-40 pr-28'>
           <h1 className='title__products-services'>
-            {location.state.row ? 'Editar Usuario' : 'Crear Usuario'}
+            {location.state?.row ? 'Editar Usuario' : 'Crear Usuario'}
           </h1>
           <div className='w-100 h-100 grid grid-cols-2'>
             <div className='input__profile-user'>
