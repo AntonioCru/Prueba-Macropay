@@ -1,0 +1,15 @@
+@import url('../../styles/__color.css');
+
+.target-login__input {
+  border: 1px solid var(--colorBorderInput);
+  background-color: var(--colorFontBackGround);
+  color: var(--colorTextInput);
+  width: 90%;
+  height: 3rem;
+  margin: 10px 0;
+  border-radius: 10px;
+  padding-left: 50px;
+}
+.target-login__input::placeholder {
+  color: var(--colorTextPlaceholder);
+}

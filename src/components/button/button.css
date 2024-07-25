@@ -1,0 +1,11 @@
+.buttonPrimary {
+	color: var(--colorTitle);
+	background-color: var(--colorBorderInput);
+	height: 50px;
+}
+.buttonSecondary {
+	height: 50px;
+}
+.button:hover {
+	color: var(--colorTitle);
+}
