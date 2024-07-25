@@ -123,7 +123,7 @@ export default function CreateOrEditItem({ location }) {
                 required
                 minLength={3}
                 maxLength={30}
-                value={location.state.row?.name}
+                value={location.state?.row?.name}
               />
               <InputError errors={errors} name='name' />
             </div>
@@ -136,7 +136,7 @@ export default function CreateOrEditItem({ location }) {
                 required
                 minLength={3}
                 maxLength={10}
-                value={location.state.row?.telephono}
+                value={location.state?.row?.telephono}
               />
               <InputError errors={errors} name='telephono' />
             </div>
@@ -149,7 +149,7 @@ export default function CreateOrEditItem({ location }) {
                 required
                 minLength={1}
                 maxLength={20}
-                value={location.state.row?.address}
+                value={location.state?.row?.address}
               />
               <InputError errors={errors} name='address' />
             </div>
@@ -161,7 +161,7 @@ export default function CreateOrEditItem({ location }) {
                 name='codePostal'
                 minLength={5}
                 maxLength={5}
-                value={location.state.row?.codePostal}
+                value={location.state?.row?.codePostal}
               />
               <InputError errors={errors} name='codePostal' />
             </div>
@@ -173,7 +173,7 @@ export default function CreateOrEditItem({ location }) {
                 name='age'
                 minLength={1}
                 maxLength={3}
-                value={location.state.row?.age}
+                value={location.state?.row?.age}
               />
               <InputError errors={errors} name='age' />
             </div>
@@ -184,7 +184,7 @@ export default function CreateOrEditItem({ location }) {
                 name='civilStatus'
                 minLength={1}
                 maxLength={15}
-                value={location.state.row?.civilStatus}
+                value={location.state?.row?.civilStatus}
               />
               <InputError errors={errors} name='civilStatus' />
             </div>
@@ -197,7 +197,7 @@ export default function CreateOrEditItem({ location }) {
                 onClick={handleNavigate}
               />
               <Buton
-                title={location.state.row ? 'Editar' : 'Crear'}
+                title={location.state?.row ? 'Editar' : 'Crear'}
                 primaryOrSecondary='primary'
                 type='submit'
               />
